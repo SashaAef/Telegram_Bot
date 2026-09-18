@@ -56,7 +56,7 @@ def get_apartment (message):  # Получаем адрес
     bot.reply_to(message,'Адрес уже в блокноте.\n\n'
     'Теперь, будь добр, в двух-трех словах опиши свою проблему')
 
-    bot.register_next_step_handler(message, get_explanation) # Ждём описание проблемы
+    bot.register_next_step_handler(message, get_explanation) # Передача сообщения от пользователя (объяснение проблемы) в функцию
 
 def get_explanation(message):  # Получаем объяснение проблемы
                     
